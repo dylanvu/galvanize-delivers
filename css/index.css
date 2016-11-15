@@ -1,0 +1,27 @@
+h1 {
+  font-weight: 100;
+}
+
+h5 {
+  font-weight: 300;
+}
+
+header {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  flex-direction: column;
+  height: 450px;
+  justify-content: center;
+}
+
+i {
+  vertical-align: bottom;
+}
+
+.brand-logo, .button-collapse {
+  margin-left: 10px;
+}
+
+.brand-logo {
+  font-weight: 300;
+}
