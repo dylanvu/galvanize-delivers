@@ -4,6 +4,12 @@
   $(".button-collapse").sideNav();
 
   const items = [];
+  let $tr;
+  let $tdName;
+  let $tdPrice;
+  let subtotal = 0;
+  let tax;
+  let total;
 
   $('.addItem').on('click', (event) => {
     $('tbody').empty();
@@ -17,13 +23,6 @@
     item.name = name;
     item.price = price;
     items.push(item);
-
-    let $tr;
-    let $tdName;
-    let $tdPrice;
-    let subtotal = 0;
-    let tax;
-    let total;
 
     for (const item of items) {
       $tr = $('<tr>');
