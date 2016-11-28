@@ -36,8 +36,136 @@
     <main>
       <div class="container">
         <div class="row">
-        </div>
-        <div class="row">
+
+          <div class="col s12 m7">
+            <h4>Menu</h4>
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="card">
+                  <div class="card-image">
+                    <img class="responsive-img" src="img/burger.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title flow-text">Deluxe and Fries</span>
+                    <p>$7.99</p>
+                  </div>
+                  <div class="card-action">
+                    <a class="addItem">ADD TO ORDER</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6">
+                <div class="card">
+                  <div class="card-image">
+                    <img class="responsive-img" src="img/ribs.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title flow-text">Memphis Ribs</span>
+                    <p>$13.99</p>
+                  </div>
+                  <div class="card-action">
+                    <a class="addItem">ADD TO ORDER</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="card">
+                  <div class="card-image">
+                    <img class="responsive-img" src="img/pizza.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title flow-text">Pizza</span>
+                    <p>$8.99</p>
+                  </div>
+                  <div class="card-action">
+                    <a class="addItem">ADD TO ORDER</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6">
+                <div class="card">
+                  <div class="card-image">
+                    <img class="responsive-img" src="img/ice_cream.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title flow-text">Ice Cream</span>
+                    <p>$4.99</p>
+                  </div>
+                  <div class="card-action">
+                    <a class="addItem">ADD TO ORDER</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m5">
+            <h4>Order</h4>
+            <table>
+              <thead>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </thead>
+            </table>
+
+            <form>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name" required>
+                    First Name
+                  </label>
+                </div>
+
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name" required>
+                    Last Name
+                  </label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="phone_number" type="tel" class="validate">
+                  <label for="phone_number" required>
+                    Phone #
+                  </label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="text" class="validate">
+                  <label for="email" required>
+                    Email
+                  </label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="address" type="text" class="validate">
+                  <label for="address">
+                    Address
+                  </label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col s12 center">
+                  <a id="placeOrder" class="waves-effect waves-light btn">
+                    Place Order
+                  </a>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </main>
@@ -46,9 +174,9 @@
       <div class="container">
         <div class="row">
           <div class="col s12 m8">
-            <h3 class="white-text">
+            <h5 class="white-text">
               Galvanize Delivers
-            </h3>
+            </h5>
             <p class="white-text">
               Fine Dining, Delivered.
             </p>
