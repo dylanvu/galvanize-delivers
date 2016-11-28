@@ -3,11 +3,10 @@
 
   $(".button-collapse").sideNav();
 
-  const $tbody = $('tbody');
   const items = [];
 
   const renderOrder = function() {
-    $tbody.empty();
+    $('tbody').empty();
     let $tr;
     let $tdName;
     let $tdPrice;
@@ -17,14 +16,13 @@
 
     for (const item of items) {
       $tr = $('<tr>');
-      $tdName = $('<td>').append(item.name);
-      $tdPrice = $('<td>').append(`$${item.price}`);
+      $tdName = $('<td>').text(item.name);
+      $tdPrice = $('<td>').text(`$${item.price.toFixed(2)}`);
       $tdPrice.addClass('right-align');
 
       $tr.append($tdName);
       $tr.append($tdPrice);
-
-      $tbody.append($tr);
+      $('tbody').append($tr);
 
       subtotal += item.price;
     }
@@ -34,8 +32,9 @@
     $('#subtotal').text(`$${subtotal.toFixed(2)}`);
     $('#tax').text(`$${tax.toFixed(2)}`);
     $('#total').text(`$${total.toFixed(2)}`);
-
   }
+
+  renderOrder();
 
   $('.addItem').on('click', (event) => {
     const $target = $(event.target);
@@ -50,5 +49,9 @@
     console.log(items);
 
     renderOrder();
+  });
+
+  $('#placeOrder').on('click', (event) => {
+
   });
 })();
