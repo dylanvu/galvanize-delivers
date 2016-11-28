@@ -12,6 +12,10 @@ main {
   padding-bottom: 20px;
 }
 
+i {
+  vertical-align: bottom;
+}
+
 .home {
   background-image: url(../img/hero.jpg);
   background-size: cover;
@@ -20,14 +24,14 @@ main {
   justify-content: center;
 }
 
-i {
-  vertical-align: bottom;
-}
-
 .brand-logo, .button-collapse {
   margin-left: 10px;
 }
 
 .brand-logo {
   font-weight: 300;
+}
+
+.addItem:hover {
+  cursor: pointer;
 }

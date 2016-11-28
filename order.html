@@ -117,15 +117,15 @@
             <form>
               <div class="row">
                 <div class="input-field col s6">
-                  <input id="first_name" type="text" class="validate">
-                  <label for="first_name" required>
+                  <input id="firstName" type="text" class="validate" required>
+                  <label for="firstName">
                     First Name
                   </label>
                 </div>
 
                 <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name" required>
+                  <input id="lastName" type="text" class="validate" required>
+                  <label for="lastName">
                     Last Name
                   </label>
                 </div>
@@ -133,8 +133,8 @@
 
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="phone_number" type="tel" class="validate">
-                  <label for="phone_number" required>
+                  <input id="phoneNumber" type="tel" class="validate" required>
+                  <label for="phoneNumber">
                     Phone #
                   </label>
                 </div>
@@ -142,8 +142,8 @@
 
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="email" type="text" class="validate">
-                  <label for="email" required>
+                  <input id="email" type="email" class="validate" required>
+                  <label for="email">
                     Email
                   </label>
                 </div>
@@ -151,7 +151,7 @@
 
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="address" type="text" class="validate">
+                  <textarea id="address" type="text" class="validate materialize-textarea" required></textarea>
                   <label for="address">
                     Address
                   </label>
@@ -163,6 +163,7 @@
                   <a id="placeOrder" class="waves-effect waves-light btn">
                     Place Order
                   </a>
+                </div>
               </div>
             </form>
           </div>
