@@ -46,12 +46,35 @@
     item.name = name;
     item.price = price;
     items.push(item);
-    console.log(items);
 
     renderOrder();
   });
 
-  $('#placeOrder').on('click', (event) => {
-
+  $('#placeOrder').on('click', () => {
+    if (items.length === 0) {
+      Materialize.toast('There are no items in your order, please add an item.', 4000);
+      return;
+    }
+    if ($('#firstName').val() === '') {
+      Materialize.toast('Please add your first name.', 4000);
+      return;
+    }
+    if ($('#lastName').val() === '') {
+      Materialize.toast('Please add your last name.', 4000);
+      return;
+    }
+    if ($('#phone').val() === '') {
+      Materialize.toast('Please add your phone number.', 4000);
+      return;
+    }
+    if ($('#email').val() === '') {
+      Materialize.toast('Please add your email.', 4000);
+      return;
+    }
+    if ($('#address').val() === '') {
+      Materialize.toast('Please add the address you want to ship this order to.', 4000);
+      return;
+    }
+    Materialize.toast('Your order has been placed. Thank you!', 4000);
   });
 })();
