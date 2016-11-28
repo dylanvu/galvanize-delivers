@@ -1,29 +1,18 @@
 (function() {
   'use strict';
 
-  $(".button-collapse").sideNav();
+  $('.button-collapse').sideNav();
 
   const items = [];
   let subtotal = 0;
   let tax;
   let total;
 
-  $('.addItem').on('click', (event) => {
-    $('tbody').empty();
-
-    const $target = $(event.target);
-    const $cardContent = $target.parent().siblings('.card-content');
-    const name = $cardContent.children('.card-title').text();
-    const price = parseFloat($cardContent.children('p').text().slice(1));
-
-    const item = {};
-    item.name = name;
-    item.price = price;
-    items.push(item);
-
+  function renderOrder() {
     let $tr;
     let $tdName;
     let $tdPrice;
+
     for (const item of items) {
       $tr = $('<tr>');
       $tdName = $('<td>').text(item.name);
@@ -42,6 +31,25 @@
     $('#subtotal').text(`$${subtotal.toFixed(2)}`);
     $('#tax').text(`$${tax.toFixed(2)}`);
     $('#total').text(`$${total.toFixed(2)}`);
+  }
+
+  renderOrder();
+
+  $('.addItem').on('click', (event) => {
+    $('tbody').empty();
+
+    const $target = $(event.target);
+    const $cardContent = $target.parent().siblings('.card-content');
+    const name = $cardContent.children('.card-title').text();
+    const price = parseFloat($cardContent.children('p').text().slice(1));
+
+    const item = {};
+
+    item.name = name;
+    item.price = price;
+    items.push(item);
+
+    renderOrder();
   });
 
   $('#placeOrder').on('click', () => {
