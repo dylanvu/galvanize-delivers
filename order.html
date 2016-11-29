@@ -43,7 +43,7 @@
               <div class="col s12 m6">
                 <div class="card">
                   <div class="card-image">
-                    <img class="responsive-img" src="img/burger.jpg">
+                    <img class="responsive-img" src="img/burger.jpg" alt="Deluxe Burger and Fries">
                   </div>
                   <div class="card-content">
                     <span class="card-title flow-text">Deluxe and Fries</span>
@@ -58,7 +58,7 @@
               <div class="col s12 m6">
                 <div class="card">
                   <div class="card-image">
-                    <img class="responsive-img" src="img/ribs.jpg">
+                    <img class="responsive-img" src="img/ribs.jpg" alt="Memphis Ribs">
                   </div>
                   <div class="card-content">
                     <span class="card-title flow-text">Memphis Ribs</span>
@@ -75,7 +75,7 @@
               <div class="col s12 m6">
                 <div class="card">
                   <div class="card-image">
-                    <img class="responsive-img" src="img/pizza.jpg">
+                    <img class="responsive-img" src="img/pizza.jpg" alt="Pizza">
                   </div>
                   <div class="card-content">
                     <span class="card-title flow-text">Pizza</span>
@@ -90,7 +90,7 @@
               <div class="col s12 m6">
                 <div class="card">
                   <div class="card-image">
-                    <img class="responsive-img" src="img/ice_cream.jpg">
+                    <img class="responsive-img" src="img/ice_cream.jpg" alt="Ice Cream">
                   </div>
                   <div class="card-content">
                     <span class="card-title flow-text">Ice Cream</span>
@@ -108,8 +108,10 @@
             <h4>Order</h4>
             <table>
               <thead>
-                <th>Item</th>
-                <th class="right-align">Price</th>
+                <tr>
+                  <th>Item</th>
+                  <th class="right-align">Price</th>
+                </tr>
               </thead>
 
               <tbody></tbody>
@@ -118,17 +120,17 @@
                 <tr>
                   <td class="right-align">Subtotal</td>
                   <td id="subtotal" class="right-align"></td>
-                <tr>
+                </tr>
 
                 <tr>
                   <td class="right-align">Tax</td>
                   <td id="tax" class="right-align"></td>
-                <tr>
+                </tr>
 
                 <tr>
                   <td class="right-align">Total</td>
                   <td id="total" class="right-align"></td>
-                <tr>
+                </tr>
               </tfoot>
             </table>
 
@@ -169,7 +171,7 @@
 
               <div class="row">
                 <div class="input-field col s12">
-                  <textarea id="address" type="text" class="validate materialize-textarea" required></textarea>
+                  <textarea id="address" class="validate materialize-textarea" required></textarea>
                   <label for="address">
                     Address
                   </label>
