@@ -8,7 +8,7 @@
   let tax;
   let total;
 
-  function renderOrder() {
+  const renderOrder = () => {
     let $tr;
     let $tdName;
     let $tdPrice;
@@ -31,7 +31,7 @@
     $('#subtotal').text(`$${subtotal.toFixed(2)}`);
     $('#tax').text(`$${tax.toFixed(2)}`);
     $('#total').text(`$${total.toFixed(2)}`);
-  }
+  };
 
   renderOrder();
 
